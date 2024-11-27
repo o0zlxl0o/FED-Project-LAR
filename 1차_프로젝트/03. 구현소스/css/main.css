@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+/* 1차 개인 PJ : 메인페이지 CSS - main.css */
+
+/* 리셋, 코아, 커먼 공통 외부CSS 합치기 */
+@import url(./reset.css);
+@import url(./core.css);
+@import url(./common.css);
+
+/* 공사중 표시 */
+body * {
+  outline: 2px dashed #ccc;
+}
+
+/* 임시 높이 */
+.main-area .inbox {
+  height: 500px;
+}
+
+.top-area{
+font-size: 4vw;
+font-weight: 800;
+}

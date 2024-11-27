@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+/* 1차 개인 PJ : 공통 클래스 CSS - core.css */
+/* 공통 셋팅을 위한 클래스 + 웹폰트 */
+
+/* 웹폰트 CDN */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap');/* 
+
+
+/* 전체 글자크기 */
+html{
+    font-size: 10px;
+    /* rem단위 계산편의를 위함 */
+}
+body{
+    /* 글자체 */
+    font-family: "Host Grotesk", sans-serif;
+}
