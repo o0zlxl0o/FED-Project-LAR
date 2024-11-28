@@ -16,3 +16,11 @@ body{
     /* 글자체 */
     font-family: "Host Grotesk", sans-serif;
 }
+
+/* 플렉스박스 클래스 */
+.fx-box{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
