@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+/* 1차 개인 PJ : 메인페이지 CSS - index.css */
+
+
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    pointer-events: none
+}
+
+.nav_top {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 998;
+    padding: 1.2rem var(--pgrid);
+    background: var(--ck_bg, #FAFAFA);
+    transition: .6s transform cubic-bezier(.55,0,.1,1);
+    transform-origin: top center;
+    pointer-events: all;
+    color: var(--navtopcolor, #000)
+}
+
+@media (orientation: portrait) {
+    :root.T .nav_top {
+        display:flex;
+        justify-content: space-between;
+        align-items: center
+    }
+
+    :root.T .nav_top:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: var(--ck_hvar, 100vh);
+        height: 100dvh;
+        background: #000;
+        transform: scaleY(var(--navbg, 0));
+        transform-origin: top;
+        pointer-events: none
+    }
+}
+.nav_top_l {
+    position: relative;
+    z-index: 99
+}
