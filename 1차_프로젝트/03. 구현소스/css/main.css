@@ -15,19 +15,17 @@ body * {
 
 /* 임시 높이 */
 .main-area .inbox {
-  height: 500px;
+  height: 30vw;
 }
 
-
-
-.top-area{
-font-size: 4vw;
-font-weight: 800;
+.top-area {
+  font-size: 4vw;
+  font-weight: 600;
+  display: flex;
 }
 
-
-
-.btn-copy .btn_t .real, .btn-copy .btn_t .copy {
+.btn-copy .btn_t .real,
+.btn-copy .btn_t .copy {
   white-space: nowrap;
 }
 
@@ -38,14 +36,26 @@ font-weight: 800;
   left: 0;
   width: 100%;
   height: 2px;
-  background: #000;
+  background: rgb(241, 101, 138);
   transform-origin: left;
   transform: scaleX(0);
-  transition: .45s transform cubic-bezier(.55,0,.1,1);
+  transition: 0.45s transform
+    cubic-bezier(0.55, 0, 0.1, 1);
 }
 
-video {
+.main-b {
+  position: relative;
+  height: 50%;
+  width: 50%;
   object-fit: contain;
   overflow-clip-margin: content-box;
   overflow: clip;
+}
+/* 메인 배경 이미지 */
+.img-bx {
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  /* 오브젝트 핏 포지션 top변경 */
+  object-position: top;
 }
