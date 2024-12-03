@@ -2,6 +2,10 @@
 
 /* 1차 개인 PJ : 리셋 CSS - reset.css */
 
+html{
+    font-size: 10px;
+}
+
 /* 기본 초기화 */
 html,
 body,
