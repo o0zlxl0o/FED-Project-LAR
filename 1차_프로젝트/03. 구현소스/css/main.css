@@ -51,6 +51,7 @@ body * {
   height: 2rem;
   overflow: hidden;
   outline: 2px dotted red;
+  color: rgb(241, 101, 138);
 }
 .btn_t span{
   display: block;
@@ -59,6 +60,7 @@ body * {
 }
 .btn_t:hover span{
   translate: 0 -100%;
+  color: #fff;
 }
 
 .nav_top_c .btn_t span:after {
