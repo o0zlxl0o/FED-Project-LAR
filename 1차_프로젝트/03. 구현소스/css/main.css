@@ -51,6 +51,7 @@ body * {
 .btn_t span{
   display: block;
   transition: .4s ease-out;
+  color: #000;
 }
 .btn_t:hover span{
   translate: 0 -100%;
