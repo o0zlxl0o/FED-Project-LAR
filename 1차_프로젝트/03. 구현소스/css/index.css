@@ -140,14 +140,39 @@ video {
   justify-content: flex-end;
   gap: 1.6rem;
   z-index: 10;
+  font-size: 1.4rem;
+  line-height: 2.3;
 }
 
+/* 상단 오른쪽버튼 */
 .btn-r {
+  position: relative;
   border: 1px solid rgb(241, 101, 138);
-  padding: 1.1rem 2rem;
+  padding: 0 2rem;
   border-radius: 2em;
   overflow: hidden;
+  transition: .3s;
 }
+.btn-r::after{
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  bottom: 100%;
+  width: 100%;
+  height: 0%;
+  background-color: hotpink;
+  transition: .3s;
+}
+.btn-r:hover::after{
+  height: 100%;
+  bottom: 0;
+  transition: height .3s;
+}
+.btn-r:hover{
+  color: #fff;
+}
+
 
 *, *:before, *:after {
     box-sizing: inherit;

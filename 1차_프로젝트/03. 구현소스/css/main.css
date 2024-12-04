@@ -25,17 +25,21 @@ body * {
   left: 0;
   width: 100%;
   height: 100px;
-  font-size: 2rem;
+  /* font-size: 2rem; */
   font-weight: 600;
   display: flex;
   align-items: center;
+  padding: 0 1vw;
+  box-sizing: border-box;
 }
 .top-area>div{
   flex: 1;
 }
+/* 중앙네비게이션 */
 .nav_top_c{
   display: flex;
   justify-content: center;
+  font-size: 1.5rem;
 }
 
 .btn-copy .btn_t .real,
@@ -44,7 +48,7 @@ body * {
 }
 
 .btn_t{
-  height: 3rem;
+  height: 2rem;
   overflow: hidden;
   outline: 2px dotted red;
 }
@@ -80,10 +84,42 @@ body * {
   overflow: clip;
 }
 /* 메인 배경 이미지 */
-.img-bx {
+.img-bx img {
   top: 0;
   width: 100vw;
   height: 100vh;
   /* 오브젝트 핏 포지션 top변경 */
+  object-fit: cover;
   object-position: top;
+}
+
+.character_act div{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.char_act1{
+  translate: -372% 160%;
+  animation: act1_ani 3s ease-out 2s forwards;
+}
+@keyframes act1_ani {
+  to{
+    translate: -234% 30%;
+  }
+}
+.char_act2{
+  translate: -48% 17%;
+}
+.char_act3{
+  translate: -18% -49%;
+}
+.coffee{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120px;
+  display: none;
+  pointer-events: none;
+  translate: -50% -50%;
+  transition: .3s ease-out;
 }
