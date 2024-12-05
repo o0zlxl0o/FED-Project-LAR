@@ -151,7 +151,7 @@ video {
   padding: 0 2rem;
   border-radius: 2em;
   overflow: hidden;
-  transition: .3s;
+  transition: .2s;
 }
 .btn-r::after{
   content: '';
@@ -169,8 +169,8 @@ video {
   bottom: 0;
   transition: height .3s;
 }
-.btn-r:hover{
-  color: #fff;
+.btn-r:hover .btn_2{
+  color: #ffffff;
 }
 
 
@@ -207,14 +207,17 @@ a {
   text-decoration: none;
 }
 
-.mainlgoI {
+.mainlogo {
   position: absolute;
   /* 오브젝트 핏 포지션 top변경 */
   object-position: top;
-  width: 20vw;
-  top: 130px;
+  width: 4vw;
+  top: 12vh;
   /* 가로중앙셋팅: 
   앱솔루트이므로 마.영.오 적용불가! */
   left: 50%;
   translate: -50%;
+}
+.main{
+  height: 120vh;
 }

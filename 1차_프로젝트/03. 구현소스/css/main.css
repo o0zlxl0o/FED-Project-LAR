@@ -32,11 +32,11 @@ body * {
   padding: 0 1vw;
   box-sizing: border-box;
 }
-.top-area>div{
+.top-area > div {
   flex: 1;
 }
 /* 중앙네비게이션 */
-.nav_top_c{
+.nav_top_c {
   display: flex;
   justify-content: center;
   font-size: 1.5rem;
@@ -47,22 +47,23 @@ body * {
   white-space: nowrap;
 }
 
-.btn_t{
+.btn_t {
   height: 2rem;
   overflow: hidden;
   outline: 2px dotted red;
   color: rgb(241, 101, 138);
 }
-.btn_t span{
+.btn_t span {
   display: block;
-  transition: .4s ease-out;
+  transition: 0.25s ease-out;
   color: #000;
 }
-.btn_t:hover span{
+.btn_t:hover span {
   translate: 0 -100%;
-  color: #fff;
 }
-
+.btn_2 {
+  color: rgb(241, 101, 138);
+}
 .nav_top_c .btn_t span:after {
   content: "";
   position: absolute;
@@ -70,7 +71,7 @@ body * {
   left: 0;
   width: 100%;
   height: 2px;
-  background: rgb(241, 101, 138);
+  background: rgb(88, 36, 50);
   transform-origin: left;
   transform: scaleX(0);
   transition: 0.45s transform
@@ -95,27 +96,27 @@ body * {
   object-position: top;
 }
 
-.character_act div{
+.character_act div {
   position: absolute;
   top: 50%;
   left: 50%;
 }
-.char_act1{
+.char_act1 {
   translate: -372% 160%;
   animation: act1_ani 3s ease-out 2s forwards;
 }
 @keyframes act1_ani {
-  to{
+  to {
     translate: -234% 30%;
   }
 }
-.char_act2{
+.char_act2 {
   translate: -48% 17%;
 }
-.char_act3{
+.char_act3 {
   translate: -18% -49%;
 }
-.coffee{
+.coffee {
   position: absolute;
   top: 0;
   left: 0;
@@ -123,5 +124,5 @@ body * {
   display: none;
   pointer-events: none;
   translate: -50% -50%;
-  transition: .3s ease-out;
+  transition: 0.3s ease-out;
 }
