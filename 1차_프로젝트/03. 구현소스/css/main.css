@@ -102,19 +102,19 @@ body * {
   left: 50%;
 }
 .char_act1 {
-  translate: -372% 160%;
+  translate: -250% 150%;
   animation: act1_ani 3s ease-out 2s forwards;
 }
 @keyframes act1_ani {
   to {
-    translate: -234% 30%;
+    translate: -200% 30%;
   }
 }
 .char_act2 {
-  translate: -48% 17%;
+  translate: -30% 0%;
 }
 .char_act3 {
-  translate: -18% -49%;
+  translate: 100% 35%;
 }
 .coffee {
   position: absolute;
